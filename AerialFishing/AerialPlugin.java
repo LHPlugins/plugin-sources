@@ -139,6 +139,7 @@ public class AerialPlugin extends Plugin {
 
         if (commonTench.isPresent()){
             mousePackets.queueClickPacket(); //Simulate click
+            mousePackets.queueClickPacket(); //Simulate click
             WidgetPackets.queueWidgetOnWidget(knife.get(), commonTench.get());
             if (config.debug()){
                 api.sendClientMessage("Clicked on common tench");
@@ -146,6 +147,7 @@ public class AerialPlugin extends Plugin {
             return;
         }
         if (mottledEel.isPresent()){
+            mousePackets.queueClickPacket(); //Simulate click
             mousePackets.queueClickPacket(); //Simulate click
             WidgetPackets.queueWidgetOnWidget(knife.get(), mottledEel.get());
             if (config.debug()){
@@ -155,6 +157,7 @@ public class AerialPlugin extends Plugin {
         }
         if (greaterSiren.isPresent()){
             mousePackets.queueClickPacket(); //Simulate click
+            mousePackets.queueClickPacket(); //Simulate click
             WidgetPackets.queueWidgetOnWidget(knife.get(), greaterSiren.get());
             if (config.debug()){
                 api.sendClientMessage("Clicked on greater siren");
@@ -162,6 +165,7 @@ public class AerialPlugin extends Plugin {
             return;
         }
         if (bluegill.isPresent()){
+            mousePackets.queueClickPacket(); //Simulate click
             mousePackets.queueClickPacket(); //Simulate click
             WidgetPackets.queueWidgetOnWidget(knife.get(), bluegill.get());
             if (config.debug()){
